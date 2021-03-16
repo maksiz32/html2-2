@@ -1,16 +1,36 @@
 @font-face {
-  font-family: 'Raleway';
-  src: url("../font/Raleway-Regular.eot");
-  src: url("../font/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../font/Raleway-Regular.svg#Raleway-Regular") format("svg"), url("../font/Raleway-Regular.ttf") format("truetype"), url("../font/Raleway-Regular.woff") format("woff"), url("../font/Raleway-Regular.woff2") format("woff2");
+  font-family: 'raleway';
+  src: url("../font/raleway-light.eot");
+  src: url("../font/raleway-light.eot?#iefix") format("embedded-opentype"), url("../font/raleway-light.svg#raleway-light") format("svg"), url("../font/raleway-light.ttf") format("truetype"), url("../font/raleway-light.woff") format("woff"), url("../font/raleway-light.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../font/raleway-regular.eot");
+  src: url("../font/raleway-regular.eot?#iefix") format("embedded-opentype"), url("../font/raleway-regular.ttf") format("truetype"), url("../font/raleway-regular.woff") format("woff"), url("../font/raleway-regular.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../font/raleway-bold.ttf") format("truetype"), url("../font/raleway-bold.woff") format("woff"), url("../font/raleway-bold.eot"), url("../font/raleway-bold.eot?#iefix") format("embedded-opentype"), url("../font/raleway-bold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url("../font/montserrat-regular.eot");
+  src: url("../font/montserrat-regular.eot?#iefix") format("embedded-opentype"), url("../font/montserrat-regular.svg#montserrat-regular") format("svg"), url("../font/montserrat-regular.ttf") format("truetype"), url("../font/montserrat-regular.woff") format("woff"), url("../font/montserrat-regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: normal;
 }
 
 .header {
@@ -59,9 +79,11 @@ body {
 }
 
 .header-nav-logo-txt {
-  font-family: Raleway;
+  font-family: 'raleway', sans-serif;
   font-size: 34px;
+  line-height: 1.2;
   font-weight: 400;
+  letter-spacing: -0.04em;
   text-align: right;
 }
 
@@ -88,7 +110,6 @@ body {
   display: block;
   width: 73px;
   height: 73px;
-  border: 1px solid green;
   position: relative;
 }
 
@@ -99,17 +120,29 @@ body {
   text-align: center;
 }
 
+.header-carusel-txt__regular {
+  font-family: 'raleway', sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.header-carusel-txt p {
+  font-family: 'montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
 .header-carusel-txt-btn {
-  width: 180px;
-  padding: 10px;
+  width: 170px;
+  padding: 18px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: none;
-  border-bottom: 3px solid #736357;
-  border-radius: 10px;
+  border-radius: 5px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -117,7 +150,7 @@ body {
   color: #fff;
   -ms-word-break: break-all;
   word-break: break-all;
-  margin: 0 auto;
+  margin: 52px auto;
 }
 
 .header-carusel-txt-btn:hover {
@@ -132,6 +165,11 @@ body {
 
 .header-carusel-txt-btn-txt {
   margin: auto;
+  font-family: raleway;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .header-carusel-pagination {
@@ -161,12 +199,16 @@ body {
 
 .header-carusel-pagination-item:hover {
   background-color: transparent;
-  -webkit-box-shadow: 0 0 0px 2px white;
-          box-shadow: 0 0 0px 2px white;
+  -webkit-box-shadow: 0 0 0 2px white;
+          box-shadow: 0 0 0 2px white;
 }
 
 .header-nav-menu {
   padding: 16px 0 0 0;
+  font-family: 'montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
 }
 
 .header-nav a {
@@ -305,5 +347,19 @@ body {
 .carusel-btn-right:hover:before {
   border: 1px solid red;
   opacity: 0.5;
+}
+
+.header-carusel-txt h1 {
+  font-family: raleway;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+.header-carusel-txt p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */
