@@ -1,5 +1,16 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url("../font/Raleway-Regular.eot");
+  src: url("../font/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../font/Raleway-Regular.svg#Raleway-Regular") format("svg"), url("../font/Raleway-Regular.ttf") format("truetype"), url("../font/Raleway-Regular.woff") format("woff"), url("../font/Raleway-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .header {
@@ -78,6 +89,7 @@ body {
   width: 73px;
   height: 73px;
   border: 1px solid green;
+  position: relative;
 }
 
 .header-carusel-txt {
@@ -149,7 +161,8 @@ body {
 
 .header-carusel-pagination-item:hover {
   background-color: transparent;
-  border: 1px solid white;
+  -webkit-box-shadow: 0 0 0px 2px white;
+          box-shadow: 0 0 0px 2px white;
 }
 
 .header-nav-menu {
@@ -226,5 +239,71 @@ body {
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
   border: 2px solid #fff;
+}
+
+.carusel-btn-left::after {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 0px;
+  border: 1px solid #d3c1ad;
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  opacity: 0.5;
+}
+
+.carusel-btn-left::before {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 0px;
+  border: 1px solid #d3c1ad;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  position: absolute;
+  top: 38px;
+  left: 0;
+  opacity: 0.5;
+}
+
+.carusel-btn-left:hover:before {
+  border: 1px solid red;
+  opacity: 0.5;
+}
+
+.carusel-btn-right::after {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 0px;
+  border: 1px solid #d3c1ad;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  opacity: 0.5;
+}
+
+.carusel-btn-right::before {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 0px;
+  border: 1px solid #d3c1ad;
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+  position: absolute;
+  top: 38px;
+  left: 0;
+  opacity: 0.5;
+}
+
+.carusel-btn-right:hover:before {
+  border: 1px solid red;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=main.css.map */

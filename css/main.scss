@@ -1,5 +1,10 @@
+@import 'fonts';
+
 body {
     margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 .header {
     min-height: 100vh;
@@ -61,6 +66,7 @@ body {
             width: 73px;
             height: 73px;
             border: 1px solid green;
+            position: relative;
 
             // &:nth-of-type(1) {
             //     margin: 0 0 0 0;
@@ -130,7 +136,8 @@ body {
 
                 &:hover {
                     background-color: transparent;
-                    border: 1px solid white;
+                    // border: 1px solid white;
+                    box-shadow: 0 0 0px 2px white;
                 }
             }
         }
@@ -201,4 +208,60 @@ body {
     min-height: 20px;
     transition: width 1s ease;
     border: 2px solid #fff;
+}
+.carusel-btn-left::after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 0px;
+    border: 1px solid #d3c1ad;
+    transform: rotate(-225deg);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    opacity: 0.5;
+}
+.carusel-btn-left::before {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 0px;
+    border: 1px solid #d3c1ad;
+    transform: rotate(225deg);
+    position: absolute;
+    top: 38px;
+    left: 0;
+    opacity: 0.5;
+}
+.carusel-btn-left:hover:before {
+    border: 1px solid red;
+    opacity: 0.5;
+}
+.carusel-btn-right::after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 0px;
+    border: 1px solid #d3c1ad;
+    transform: rotate(225deg);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    opacity: 0.5;
+}
+.carusel-btn-right::before {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 0px;
+    border: 1px solid #d3c1ad;
+    transform: rotate(-225deg);
+    position: absolute;
+    top: 38px;
+    left: 0;
+    opacity: 0.5;
+}
+.carusel-btn-right:hover:before {
+    border: 1px solid red;
+    opacity: 0.5;
 }
