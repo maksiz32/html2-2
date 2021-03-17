@@ -83,11 +83,11 @@ body {
             & p {
                 font-family: 'montserrat', sans-serif;
                 font-style: normal;
-                font-weight: normal;
+                font-weight: 300;
             }
 
             &-btn {
-                width: 170px;
+                width: 165px;
                 padding: 18px;
                 box-sizing: border-box;
                 display: flex;
@@ -100,7 +100,7 @@ body {
                 color: #fff;
                 -ms-word-break: break-all;
                 word-break: break-all;
-                margin: 52px auto;
+                margin: auto;
                 
                 &:hover {
                     background-color: #fff;
@@ -130,7 +130,7 @@ body {
             padding: 5px 0;
             position: absolute;
             bottom: 0;
-            margin: auto;
+            margin: 325px 0 40px 0;
             
             &-item {
                 display: block;
@@ -287,4 +287,132 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 375px;
+
+    & a {
+        text-decoration: none;
+        max-width: 280px;
+        text-align: center;
+        font-family: raleway;
+    }
+
+    & a:not(last-of-type) {
+        margin: 0 30px 0 0;
+    }
+
+    & a:hover, a:hover > h2 {
+        color: #c7b299;
+    }
+
+    & a:hover > svg {
+        fill: #c7b299;
+    }
+
+    & svg {
+        fill: #555555;
+    }    
+}
+.main-nav-links-title {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+}
+.main-nav-links-txt {
+    font-family: montserrat;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #8c8c8c;
+}
+.ideas {
+    min-height: 700px;
+    border-color: #fbfaf8;
+    display: flex;
+    flex-direction: column;
+
+    &-main{
+        text-align: center;
+        flex-grow: 1;
+
+        &-title {
+            font-family: raleway;
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: #555555;
+        }
+
+        &-txt {
+            width: 780px;
+            display: block;
+            font-family: montserrat;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 300;
+            color: #8c8c8c;
+            margin: 0 auto;
+        }
+    }
+
+    &-photo {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    &-bottom {
+        height: 150px;
+        background-color: #4e3427;
+        background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 360px 0 360px;
+        
+        &-txt {
+            font-family: raleway;
+            font-size: 28px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #ffffff;
+
+            &__wax {
+                color: #c7b299;
+            }
+
+            &__sec {
+                margin: 0;
+                font-family: montserrat;
+                font-size: 18px;
+                line-height: 1.2;
+                font-weight: 300;
+                color: #615855;
+            }
+        }
+    }
+}
+.photo-landscape:first-child {
+    position: absolute;
+    bottom: 0;
+    left: 130px;
+    z-index: 1;    
+}
+
+.photo-landscape:nth-child(2) {
+    margin: 0 auto;
+    bottom: 0;
+    z-index: 2;
+}
+
+.photo-landscape:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 130px;
+    z-index: 1;
 }

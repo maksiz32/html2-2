@@ -21,6 +21,16 @@
 }
 @font-face {
     font-family: 'raleway';
+    src: url('../font/raleway-medium.eot');
+    src: url('../font/raleway-medium.eot?#iefix') format('embedded-opentype'),
+         url('../font/raleway-medium.ttf') format('truetype'),
+         url('../font/raleway-medium.woff') format('woff'),
+         url('../font/raleway-medium.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'raleway';
     src: url('../font/raleway-bold.ttf') format('truetype'),
          url('../font/raleway-bold.woff') format('woff'), 
         url('../font/raleway-bold.eot'),
@@ -37,6 +47,6 @@
          url('../font/montserrat-regular.ttf') format('truetype'),
          url('../font/montserrat-regular.woff') format('woff'),
          url('../font/montserrat-regular.woff2') format('woff2');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
