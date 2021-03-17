@@ -315,7 +315,21 @@ body {
 
     & svg {
         fill: #555555;
-    }    
+    }
+
+    &-links:after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 3px;
+        background-color: #f1eee9;
+        margin: 0 auto;
+        align-self: flex-end;
+    }
+
+    &-links:hover:after {
+        background-color: #c7b299;
+    }
 }
 .main-nav-links-title {
     font-size: 22px;

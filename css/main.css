@@ -407,6 +407,21 @@ body {
   fill: #555555;
 }
 
+.main-nav-links:after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #f1eee9;
+  margin: 0 auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.main-nav-links:hover:after {
+  background-color: #c7b299;
+}
+
 .main-nav-links-title {
   font-size: 22px;
   line-height: 1.2;
