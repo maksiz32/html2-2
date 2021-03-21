@@ -50,3 +50,25 @@
     font-weight: 300;
     font-style: normal;
 }
+@font-face {
+     font-family: 'fontello';
+     src: url('../font/fontello.eot?97882181');
+     src: url('../font/fontello.eot?97882181#iefix') format('embedded-opentype'),
+          url('../font/fontello.woff2?97882181') format('woff2'),
+          url('../font/fontello.woff?97882181') format('woff'),
+          url('../font/fontello.ttf?97882181') format('truetype'),
+          url('../font/fontello.svg?97882181#fontello') format('svg');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+     font-family: 'roboto';
+     src: url('../font/');
+     src: url('../font/?#iefix') format('embedded-opentype'),
+          url('../font/roboto-regular.svg#roboto-regular') format('svg'),
+          url('../font/roboto-regular.ttf') format('truetype'),
+          url('../font/roboto-regular.woff') format('woff'),
+          url('../font/roboto-regular.woff2') format('woff2');
+     font-weight: 400;
+     font-style: normal;
+   }
