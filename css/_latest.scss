@@ -27,6 +27,7 @@
         list-style-type: none;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
 
         &-link {
             background-color: rgba(17,17,17,0.0);

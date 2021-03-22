@@ -34,7 +34,6 @@ button, button:focus {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 181px;
             text-decoration: none;
             color: #fff;
             margin: 0 182px 0 0;
@@ -144,6 +143,7 @@ button, button:focus {
     justify-content: center;
     align-items: center;
     min-height: 375px;
+    flex-wrap: wrap;
 
     & a {
         text-decoration: none;
@@ -212,7 +212,7 @@ button, button:focus {
         }
 
         &-main-txt {
-            width: 780px;
+            max-width: 780px;
             display: block;
             font-family: montserrat;
             font-size: 16px;
@@ -234,7 +234,7 @@ button, button:focus {
         background-color: #4e3427;
         background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         
         &-txt {
@@ -243,7 +243,6 @@ button, button:focus {
             line-height: 1.2;
             font-weight: 400;
             color: #ffffff;
-            margin: 0 300px 0 0;
 
             &__wax {
                 color: #c7b299;
@@ -273,14 +272,14 @@ button, button:focus {
 .photo-landscape:nth-child(2) {
     position: absolute;
     bottom: 0;
-    left: 130px;
+    left: 10%;
     z-index: 1;   
 }
 
 .photo-landscape:last-child {
     position: absolute;
     bottom: 0;
-    right: 130px;
+    right: 10%;
     z-index: 1;
 }
 
@@ -579,6 +578,13 @@ button, button:focus {
             }
         }
 
+        &-pagination {
+            display: flex;
+            width: 30%;
+            margin: 0 auto;
+            justify-content: space-evenly;
+        }
+
         &-btn {
             width: 22px;
             height: 22px;
@@ -601,6 +607,8 @@ button, button:focus {
     display: flex;
     justify-content: center;
     padding: 180px 0 140px 0;
+    flex-wrap: wrap;
+    gap: 40px;
 
     &-link:not(:last-of-type) {
         margin: 0 90px 0 0;
@@ -816,8 +824,160 @@ button, button:focus {
         gap: 10px;
     }
 }
+@media (max-width: 1200px) {
+    .header-nav-logo {
+        margin: 0 35px 0 0;
+    }
+    .header-nav nav {
+        flex-wrap: wrap;
+    }
+    .header-nav-icons {
+        padding: 16px 0 0 20px;
+    }
+    .header-carusel-pagination {
+        margin: 0 auto;
+    }
+    .ideas-photo {
+        flex-direction: column;
+    }
+    .photo-landscape:first-child {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .photo-landscape:nth-child(2) {
+        position: static;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .photo-landscape:last-child {
+        position: static;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .posts {
+        padding: 0;
+        margin: 40px auto;
+    }
+    .posts-items-pagination {
+        margin: 0;
+        width: 50%;
+    }
+    .mobile img {
+        display: none;
+    }
+    .mobile-description {
+        margin: 0 auto 40px auto;
+    }
+    .partners {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .partners-link:not(:last-of-type) {
+        margin: 0;
+    }
+    .footer-top {
+        padding: 20px;
+    }
+    .footer-top-about {
+        margin: 0 20px 0 0;
+    }
+    .footer-top-widget {
+        display: none;
+    }
+    .footer-bottom {
+        padding: 20px 0;
+        flex-wrap: wrap;
+    }
+    .footer-bottom-left {
+        margin: 0 auto 20px auto;
+    }
+}
 @media (max-width: 576px) {
     body {
         width: 100%;
+    }
+    .header {
+        min-height: 20vh;
+    }
+    .header-carusel {
+        display: none;
+    }
+    .header-carusel-txt-btn {
+        padding: 10px;
+        border-radius: 0;
+    }
+    .main-nav {
+        padding: 20px 0 0 0;
+    }
+    .main-nav a:not(last-of-type) {
+        margin: 0 auto;
+    }
+    .ideas {
+        padding: 0;
+    }
+    .ideas-bottom {
+        flex-direction: column;
+    }
+    .main-nav a {
+        max-width: 240px;
+    }
+    .ideas-photo {
+        position: static;
+    }
+    .photo-landscape:first-child, .photo-landscape:nth-child(2), .photo-landscape:last-child {
+        position: static;
+        margin: 0;
+    }
+    .mobile {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .mobile img {
+        margin: 0 auto;
+    }
+    .mobile-description {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .mobile-description-title {
+        text-align: center;
+    }
+    .mobile-description-list {
+        margin: 0 auto;
+        padding: 10px 0 30px 10px;
+    }
+    .latest-btn {
+        padding: 10px;
+    }
+    .statistic {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .video {
+        display: none;
+    }
+    .partners {
+        padding: 30px 7px;
+        display: flex;
+    }
+    a.partners-link {
+        margin: 20px 20px 20px 0;
+    }
+    .footer-top {
+        display: inline-flex;
+        padding: 7px;
+    }
+    .footer-top-posts, .footer-top-twitter {
+        display: none;
+    }
+    .footer-top-about {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer-top-about-logo {
+        justify-content: center;
     }
 }
