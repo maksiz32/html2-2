@@ -11,6 +11,9 @@ button, button:focus {
     outline: none;
     border: none;
 }
+.no-margin {
+    margin: 0 !important;
+}
 .header {
     min-height: 100vh;
     background-image: url('../img/bg_header_mountains.png');
@@ -32,7 +35,7 @@ button, button:focus {
     
         &-logo {
             display: flex;
-            justify-content: space-between;
+            justify-content: start;
             align-items: center;
             text-decoration: none;
             color: #fff;
@@ -138,15 +141,16 @@ button, button:focus {
     transition: width 1s ease;
     border: 2px solid #fff;
 }
-// .icon-menu__input, .header-nav-menu__hide {
-//     display: none;
-// }
+.icon-menu__input, .header-nav-menu__hide {
+    display: none;
+}
 .main-nav {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 375px;
     flex-wrap: wrap;
+    padding: 20px 0 0 0;
 
     & a {
         text-decoration: none;
@@ -583,7 +587,7 @@ button, button:focus {
 
         &-pagination {
             display: flex;
-            width: 30%;
+            width: 70%;
             margin: 0 auto;
             justify-content: space-evenly;
         }
@@ -603,6 +607,12 @@ button, button:focus {
         }
     }
 }
+.posts-items-card-txt-link:hover {
+    color: #736357;
+}
+.posts-items-card-txt-link:active {
+    color: #111111;
+}
 .partners {
     background-image: url('../img/footer_mountains.png');
     background-position: center;
@@ -612,9 +622,14 @@ button, button:focus {
     padding: 180px 0 140px 0;
     flex-wrap: wrap;
     gap: 40px;
+    align-items: center;
 
     &-link:not(:last-of-type) {
         margin: 0 90px 0 0;
+    }
+
+    &-link:hover img {
+        filter: brightness(45%);
     }
 }
 .footer {
@@ -623,6 +638,7 @@ button, button:focus {
     &-top {
         display: flex;
         justify-content: center;
+        padding: 30px 0 0 0;
 
         &-about {
             color: #fff;
@@ -697,27 +713,7 @@ button, button:focus {
             &-link {
                 text-decoration: none;
 
-                & p {
-                    margin: 0 0 40px 0;
-                }
-
-                &:nth-of-type(odd) time {
-                    font-family: montserrat;
-                    font-size: 12px;
-                    line-height: 20px;
-                    font-weight: 300;
-                    color: #363636;
-                }
-
-                &:nth-of-type(odd) p {
-                    font-family: montserrat;
-                    font-size: 14px;
-                    line-height: 20px;
-                    font-weight: 300;
-                    color: #555555;
-                }
-
-                &:nth-of-type(even) time {
+                &:hover time {
                     font-family: montserrat;
                     font-size: 12px;
                     line-height: 20px;
@@ -725,12 +721,32 @@ button, button:focus {
                     color: #ffffff;
                 }
 
-                &:nth-of-type(even) p {
+                &:hover p {
                     font-family: montserrat;
                     font-size: 14px;
                     line-height: 20px;
                     font-weight: 300;
                     color: #c7b299;
+                }
+
+                & p {
+                    margin: 0 0 40px 0;
+                }
+
+                & time {
+                    font-family: montserrat;
+                    font-size: 12px;
+                    line-height: 20px;
+                    font-weight: 300;
+                    color: #363636;
+                }
+
+                & p {
+                    font-family: montserrat;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 300;
+                    color: #555555;
                 }
             }
         }
@@ -765,6 +781,10 @@ button, button:focus {
                     margin: 17px 0 11px 0;
                     padding: 0;
                 }
+
+                &:hover {
+                    color: #c7b299;
+                }
             }
         }
     }
@@ -775,6 +795,12 @@ button, button:focus {
         padding: 45px 0;
         justify-content: space-evenly;
     }
+}
+.footer-imgbox__img {
+    cursor: pointer;
+}
+.footer-imgbox__img:hover {
+    filter: brightness(50%);
 }
 .footer-bottom-left a, .footer-bottom-right a {
     text-decoration: none;
@@ -864,10 +890,6 @@ button, button:focus {
         padding: 0;
         margin: 40px auto;
     }
-    .posts-items-pagination {
-        margin: 0;
-        width: 50%;
-    }
     .mobile img {
         display: none;
     }
@@ -881,9 +903,6 @@ button, button:focus {
     .partners-link:not(:last-of-type) {
         margin: 0;
     }
-    .footer-top {
-        padding: 20px;
-    }
     .footer-top-about {
         margin: 0 20px 0 0;
     }
@@ -893,9 +912,6 @@ button, button:focus {
     .footer-bottom {
         padding: 20px 0;
         flex-wrap: wrap;
-    }
-    .footer-bottom-left {
-        margin: 0 auto 20px auto;
     }
 }
 @media (max-width: 576px) {
