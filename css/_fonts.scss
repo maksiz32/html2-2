@@ -71,4 +71,15 @@
           url('../font/roboto-regular.woff2') format('woff2');
      font-weight: 400;
      font-style: normal;
-   }
+}
+@font-face {
+     font-family: 'menu-btn';
+     src: url('../font/menu-btn.eot?6999319');
+     src: url('../font/menu-btn.eot?6999319#iefix') format('embedded-opentype'),
+          url('../font/menu-btn.woff2?6999319') format('woff2'),
+          url('../font/menu-btn.woff?6999319') format('woff'),
+          url('../font/menu-btn.ttf?6999319') format('truetype'),
+          url('../font/menu-btn.svg?6999319#menu-btn') format('svg');
+     font-weight: normal;
+     font-style: normal;
+}
