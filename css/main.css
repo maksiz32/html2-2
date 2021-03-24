@@ -1227,13 +1227,14 @@ button, button:focus {
   background-image: url("../img/footer_mountains.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 180px 0 140px 0;
+  padding: 130px 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 40px;
