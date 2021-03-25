@@ -531,7 +531,7 @@ button, button:focus {
   margin: 0 !important;
 }
 
-img {
+img:not(.partners-link img) {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
