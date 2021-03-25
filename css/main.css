@@ -347,6 +347,7 @@
   color: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: pointer;
 }
 
 .latest-menu-link:active {
@@ -504,6 +505,7 @@
   -webkit-box-shadow: inset 0px -2px 0px 0px #ac9584;
           box-shadow: inset 0px -2px 0px 0px #ac9584;
   border: 1px solid #ebebeb;
+  cursor: pointer;
 }
 
 .latest-btn:active {
@@ -529,12 +531,21 @@ button, button:focus {
   margin: 0 !important;
 }
 
+img {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.video-play-btn--hide {
+  display: none;
+}
+
 .header {
   min-height: 100vh;
   background-image: url("../img/bg_header_mountains.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .header-nav {
