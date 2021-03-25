@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css?v=1">
+    <link rel="stylesheet" href="css/main.css">
     <title>Зачетный макет</title>
 </head>
 <body>
@@ -325,16 +325,12 @@
             <script>
                 let video = document.querySelector("#video");
                 let button = document.querySelector("#video-btn");
-                var div4hide = document.querySelector("#video-div");
-                // console.log(div4hide);
+                let div4hide = document.querySelector("#video-div");
                 button.addEventListener("click", function() {
                     video.play()
                     video.setAttribute("controls", "controls");
                     div4hide.classList.add('video-play-btn--hide');
                 }, false);
-                // video.click(function() {
-                //     
-                // })
             </script>
         </section>
         <section class="mobile">
