@@ -1,3 +1,1 @@
-Lesson 6 
-
-Lesson 7
+Merge all
